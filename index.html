@@ -38,6 +38,11 @@
 		   </div>
  <a class="navbar-brand" href="index.html">
 
+	  <div class="col-lg-12 col-12 text-center">
+                                <marquee behavior="scroll"direction="right" scroll amount="1">
+                            <blockquote><p style="color:red" font jocker man>"Practicing Health living makes Zambia a better place to live in"</p></blockquote>
+                            </marquee>
+		  
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-lg-auto">
 
@@ -401,7 +406,7 @@ Our core business is ensure that 'residents live a health life'; are sensitized 
                
                <div id="footer">
                <span class="copyright" style="color:grey"> All Rights Reserved. MukuniWardCopyright&copy2022.<br>
-                 Designed and Maintained by: Ignatius Dunken Muleya <br>
+                 Designed and Maintained by: Ignatius D Muleya <br>
 		    SIN: 2110159696 </span>
            </div>
        </center>
@@ -409,52 +414,4 @@ Our core business is ensure that 'residents live a health life'; are sensitized 
    </body>
 </html>
 
-
-
-
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-    
-    $to = "ignatiusmuleya@gmail.com"; // Replace with your email address
-    $subject = "Contact Form Submission from $name";
-    $headers = "From: $email";
-
-    // Send the email
-    mail($to, $subject, $message, $headers);
-
-    // Redirect back to your contact form
-    header("Location: contact-thankyou.html"); // Create a thank you page
-    exit;
-}
-?>
-
-
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us</title>
-</head>
-<body>
-
-<h2>Contact Us</h2>
-
-<!-- Include the PHP file -->
-<?php
-include 'contact.php';
-?>
-
-<!-- Your HTML form code can go here -->
-<form action="process.php" method="POST">
-    <!-- Form fields -->
-</form>
-
-</body>
-</html>
 
